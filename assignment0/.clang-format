@@ -1,0 +1,7 @@
+---
+Language:        Cpp
+BasedOnStyle:  Google
+BraceWrapping:   
+  BeforeCatch:     true
+  BeforeElse:      true
+SortIncludes:    false

@@ -1,0 +1,53 @@
+camera -10 0 -4 1.5 0 1 0 1 0 26
+
+# in mm, overrides camera half-angle
+# 18 is wide-angle, 34 is normal, 200 is telephoto
+#focal_length 34
+
+# Distance at which to focus
+focal_plane 20
+
+aperture 0.4
+
+# Anything hit within this distance of the focal plane will be rendered sharp
+#depth_of_field 8
+dof_samples 150
+
+film_resolution 720 480
+
+#supersample 4
+
+material 1 0 0 1 0 0 0 0 0 16 0 0 0 0 0 0 0
+sphere 0 0 0 1
+
+material 1 .5 0 1 .5 0 0 0 0 16 0 0 0 0 0 0 0
+sphere -2 0 0 1
+sphere 2 0 0 1
+
+material 1 1 0 1 1 0 0 0 0 16 0 0 0 0 0 0 0
+#sphere 0 0 0 1
+sphere -4 0 0 1
+sphere 4 0 0 1
+
+material 0 1 0 0 1 0 0 0 0 16 0 0 0 0 0 0 0
+sphere -6 0 0 1
+sphere 6 0 0 1
+
+material 0 0 1 0 0 1 0 0 0 16 0 0 0 0 0 0 0
+sphere -8 0 0 1
+sphere 8 0 0 1
+
+
+directional_light .7 .7 .7 1 -1 1
+
+vertex 100 -1 100
+vertex 100 -1 -100
+vertex -100 -1 100
+vertex -100 -1 -100
+
+material .6 .6 .6 .6 .6 .6 0 0 0 16 0 0 0 1 0 0 0
+triangle 0 1 2
+triangle 1 2 3
+
+ambient_light .2 .2 .2
+background .1 .1 .1

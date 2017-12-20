@@ -1,0 +1,4 @@
+sphere 0 0 4 1
+background 1 1 1
+output_image images/01.bmp
+

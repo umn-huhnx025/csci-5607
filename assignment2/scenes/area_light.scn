@@ -1,0 +1,17 @@
+material .6 .6 .6 .6 .6 .6 0 0 0 16 0 0 0 1
+sphere 0 2 5 0.3
+
+directional_light .7 .7 .7 1 -1 1
+material 1 0 0 1 0 0 0 0 0 0 0 0 0 1
+sphere 0 0 4 1
+
+vertex 100 -1 100
+vertex 100 -1 -100
+vertex -100 -1 100
+vertex -100 -1 -100
+
+material .6 .6 .6 .6 .6 .6 0 0 0 16 0 0 0 1
+triangle 0 1 2
+triangle 1 2 3
+
+ambient_light .2 .2 .2
